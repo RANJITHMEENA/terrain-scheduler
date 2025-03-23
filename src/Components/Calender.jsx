@@ -149,7 +149,7 @@ const CalendarComponent = () => {
   const countEventsAtSameTime = () => {
     let sameTimeCount = 0;
     // Group the events by same day and same hour (ignoring minute and second)
-    initialData.map((event) => {
+    initialData.forEach((event) => {
       // Get the hour and day of the event start time
       const eventStartDayHour = moment(event.start)
         .startOf("hour")
