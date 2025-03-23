@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Style for all event boxes */
+.event-box {
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px;
+  margin: 5px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for events in Day View */
+.event-box.day-view {
+  border-left: 4px solid blue; /* Blue left border */
+  background-color: #fff; /* Light blue background */
+}
+
+.event-header {
+  color: black;
+  padding: 5px;
+  border-radius: 4px 4px 0 0; /* Rounded top corners */
+  font-size: 1rem;
+  text-align: center;
+}
+
+.event-header2 {
+  color: white;
+  padding: 5px;
+  border-radius: 4px 4px 0 0; /* Rounded top corners */
+  font-size: 1rem;
+  text-align: center;
+}
+
+.event-details {
+  padding-top: 5px;
+}
+.flex {
+  display: none;
+}
+/* Style for events in Week View */
+.event-box.week-view {
+}
+.event-box.month-view {
+  border: 1px solid gray;
+
+  border-left: 10px solid #0b65c3;
+}
+
+.event-header {
+  padding: 5px;
+  border-radius: 4px 4px 0 0; /* Rounded top corners */
+  font-size: 1rem;
+  text-align: center;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Ensuring minimum height for events in Day and Week views */
+.fc-timegrid-event {
+  min-height: 40px; /* Adjust the min height to ensure events are not too small */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Event styling in Day and Week views */
+.fc-daygrid-event {
+  font-size: 14px;
+  min-height: 50px; /* Adjust this for minimum height of events in the month view */
+  padding: 6px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+/* Day and Week views with enough spacing for event details */
+.fc-daygrid-event .fc-event-title {
+  font-weight: bold;
+}
+
+.fc-timegrid-event .fc-event-title {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.fc-timegrid-event .fc-event-time {
+  font-size: 10px;
+}
+
+/* Week view event styling */
+.fc-timegrid-event {
+  background-color: #1c5cbd; /* Add color */
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Responsive Design: Adjust for mobile and smaller screens */
+@media (max-width: 768px) {
+  .fc-daygrid-event {
+    font-size: 12px;
+  }
+
+  .fc-timegrid-event {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+/* Event count circle for overlapping events */
+.event-count-circle {
+  width: 30px;
+  height: 30px;
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 5px;
+  margin-right: 5px;
+  font-size: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-content {
+  position: relative;
+}
+
+.event-header {
+  font-size: 14px;
+}
+
+.event-details {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.event-details span {
+  font-weight: bold;
+}
+li {
+list-style-type: none
+}
